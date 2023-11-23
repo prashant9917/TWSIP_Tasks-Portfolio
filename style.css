@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.NavBAr {
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    background:rgb(51, 51, 51);
+}
+
+.leftNav {
+    /* border: 1px solid black; */
+    font-family: cursive;
+    font-size: 15px;
+    margin-left: 60px;
+    /* padding:   10px; */
+    color: white;
+    text-shadow: 2px 4px 4px gray;
+}
+
+.rightNav {
+    float: right;
+    font-size: 21px;
+    font-weight: 500;
+    margin-right: 60px;
+}
+
+.rightNav a {
+    margin: 0px 0px 0px 10px;
+    margin-left: 30px;
+    /* color: white; */
+    color: aqua;
+    text-decoration: none;
+}
+
+.rightNav a i {
+    /* color: gray; */
+    color: paleturquoise;
+    margin-right: 10px;
+}
+.rightNav a i:hover{
+    color: white;
+}
+.rightNav a:hover {
+    cursor: pointer;
+    background-image: linear-gradient(150deg,green, blue);
+    padding: 5px;
+    color: white;
+    /* margin: 0 5px 0 0; */
+    border-radius: 4px;
+    transition: 0.2s ease-in-out;
+}
+.rightNav .icon{
+    display: none;
+}
+
+/* @media screen and (max-width: 852px) {
+  .NavBAr.responsive {position: fixed;}
+  .NavBAr.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .NavBAr.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .rightNav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+  }
+  .rightNav a{
+    font-size:15px;
+    padding: 0;
+    margin-right: 0;
+  }
+  .rightNav a i{
+    margin-right: 5px;
+  }
+} */
+
+@media screen and (max-width:725px) {
+    .NavBAr a{display: none;}
+    .NavBAr a.icon {
+      float: right;
+      display: block;
+    }
+    .rightNav{
+        font-size: 18px;
+        /* padding:10px; */
+        /* margin-top:20px; */
+        margin-right:30px;
+    }
+    .rightNav a{
+        padding: 5px;
+    }
+    .leftNav{
+        font-size: 13px;
+        /* margin-bottom: 100px; */
+    }
+  }
+  
+
+  @media screen and (max-width: 725px) {
+    .NavBAr.responsive {position:fixed;}
+    .NavBAr.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .NavBAr.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  @media screen and (max-width:480px) {
+    .NavBAr.responsive {position: fixed;}
+    .NavBAr.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .NavBAr.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .rightNav{
+      font-size: 15px;
+      /* padding:10px; */
+      /* margin-top:20px; */
+      margin-right:30px;
+  }
+  .rightNav a{
+      padding: 5px;
+  }
+  .leftNav{
+      font-size: 10px;
+      /* margin-bottom: 100px; */
+  }
+  }
+

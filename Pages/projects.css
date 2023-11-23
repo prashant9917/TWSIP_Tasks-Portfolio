@@ -1,0 +1,273 @@
+body{
+    background-color: rgb(66, 66, 66);
+}
+.projects {
+    margin: 0;
+    padding: 0;
+    /* background:skyblue; */
+}
+
+.projects h4 {
+    margin-top: 70px;
+    font-size: 25px;
+    text-decoration: underline;
+    font-family: serif;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+}
+
+.grid-container {
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-size: cover;
+    border-radius: 8px;
+    background-color: black;
+    box-shadow: 0px 0px 10px 5px rgb(177, 175, 175);
+    /* background:black; */
+    /* overflow: hidden; */
+}
+
+.grid-items {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    box-shadow: -0px 0px 4px 2px white;
+    border-radius: 10px;
+    text-align: center;
+    background: rgb(66, 66, 66);
+    width: 200px;
+}
+
+.grid-items h3 {
+    color: white;
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.grid-items img {
+    margin-top: 0;
+    width: 100px;
+    height: 100px;
+    border: 2px solid lightgreen;
+    border-radius: 50%;
+}
+
+.grid-items p {
+    text-align: center;
+}
+
+.grid-items button {
+    border: none;
+    margin: 0px 10px 10px 10px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 2px;
+    background: linear-gradient(120deg, blue, gray);
+}
+
+.grid-items button:hover {
+    cursor: pointer;
+    background: linear-gradient(130deg, green, blue);
+}
+@media(max-width:1115px ){
+    .grid-container {
+        width: 80%;
+        margin-left: 15%;
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-size: cover;
+        border-radius: 8px;
+        background-color: black;
+        box-shadow: 0px 0px 10px 5px rgb(177, 175, 175);
+
+    }  
+    .grid-items {
+        margin: 50px 0px 50px 50px;
+        box-shadow: -0px 0px 4px 2px white;
+        border-radius: 10px;
+        text-align: center;
+        background: rgb(66, 66, 66);
+        width: 180px;
+    }
+
+}
+@media(max-width:915px ) {
+    .grid-container {
+        width: 80%;
+        margin-left: 15%;
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-size: cover;
+        border-radius: 8px;
+        background-color: black;
+        box-shadow: 0px 0px 10px 5px rgb(177, 175, 175);
+    }
+    
+    .grid-items {
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+        box-shadow: -0px 0px 4px 2px white;
+        border-radius: 10px;
+        text-align: center;
+        background: rgb(66, 66, 66);
+        width: 150px;
+    }
+    .grid-items h3 {
+        font-size: 18px;
+        color: white;
+        margin-top: 5px;
+        text-align: center;
+        text-decoration: underline;
+    }
+    
+    .grid-items img {
+        margin-top: 0;
+        width: 80px;
+        height: 80px;
+        border: 2px solid lightgreen;
+        border-radius: 50%;
+    }
+    
+    .grid-items p {
+        margin-top: 0;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .grid-items button {
+        border: none;
+        margin: 0px 10px 10px 10px;
+        padding: 6px;
+        font-size: 13px;
+        font-weight: 600;
+        border-radius: 2px;
+        background: linear-gradient(120deg, blue, gray);
+    }
+    
+    .grid-items button:hover {
+        cursor: pointer;
+        background: linear-gradient(130deg, green, blue);
+    }
+}
+
+
+
+@media(max-width:650px ) {
+    .grid-container {
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: auto auto;
+        background-size: cover;
+        border-radius: 8px;
+        background-color: black;
+        box-shadow: 0px 0px 10px 5px rgb(177, 175, 175);
+    }
+    
+    .grid-items {
+    text-align: center;
+    margin: 20px 10px 30px 30px;
+        box-shadow: -0px 0px 4px 2px white;
+        border-radius: 10px;
+        text-align: center;
+        background: rgb(66, 66, 66);
+        width: 150px;
+    }
+    
+     .grid-items h3 {
+        font-size: 15px;
+        color: white;
+        margin-top: 5px;
+        text-align: center;
+        text-decoration: underline;
+    } 
+    .grid-items img {
+        margin-top: 0;
+        width: 50px;
+        height: 50px;
+        border: 2px solid lightgreen;
+        border-radius: 50%;
+    }
+    
+    .grid-items p {
+        margin-top: 0;
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .grid-items button {
+        border: none;
+        margin: 0px 10px 10px 10px;
+        padding: 5px;
+        font-size: 10px;
+        background: linear-gradient(120deg, blue, gray);
+    }
+    
+}
+
+
+/* for minimum screens */
+
+
+@media(max-width:500px ) {
+    .grid-container {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: auto ;
+        background-size: cover;
+        border-radius: 0px;
+    }
+    
+    .grid-items {
+    margin: 20px 0px 30px 58px;
+        box-shadow: -0px 0px 4px 2px white;
+        border-radius: 10px;
+        text-align: center;
+        background: rgb(66, 66, 66);
+        width: 300px;
+    }
+    
+     .grid-items h3 {
+        font-size: 20px;
+        color: white;
+        margin-top: 8px;
+        text-align: center;
+        text-decoration: underline;
+    } 
+    .grid-items img {
+        margin-top: 10px;
+        width: 80px;
+        height: 80px;
+        border: 2px solid lightgreen;
+        border-radius: 50%;
+    }
+    
+    .grid-items p {
+        margin-top: 10px;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .grid-items button {
+        border: none;
+        margin: 0px 10px 10px 10px;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 4px;
+        background: linear-gradient(120deg, blue, gray);
+    }
+    
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/footer.css">
+</head>
+<body>
+    <div class="NavBAr" id="myTopnav">
+        <div class="leftNav">
+            <h2>Prashant's Portfolio</h2>
+        </div>
+        <div class="rightNav">
+            <a href="/index.html" class="navbar-item"><i class="fa-solid fa-house fa-bounce"></i>Home</a>
+            <a href="about.html" target="_blank" class="navbar-item"><i class="fa-solid fa-address-card"></i>About</a>
+            <!-- <a href="#" class="navbar-item"><i class="fa-solid fa-gear fa-spin"></i> Services</a> -->
+            <a href="#" class="navbar-item"><i class="fa-solid fa-phone fa-spin"></i>Contact</a>
+            <a href="projects.html" class="navbar-item"><i
+                    class="fa-solid fa-diagram-project fa-beat fa-xs"></i></i></i>Projects</a>
+            <a href="#" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+<!-- contact page -->
+
+  <div class="container">
+    <main>
+      <section>
+        <h2 style="color: white;">Contact Me</h2>
+        <p>If you have any questions or if you'd like to work together, feel free to get in touch.</p>
+      </section>
+
+      <section>
+        <div class="main-col">
+          <h2 style="color: white;">Contact Form</h2>
+          <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+
+        <aside>
+          <h2>Contact Information</h2>
+          <p>Email: prashnatsagar452@gmail.com</p>
+          <p>Phone: (991) 740-9800</p>
+        </aside>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+
+
+     <!-- Footer section -->
+     <footer>
+        <div class="icon">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/prashantsagar9800/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/prashant9917"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.instagram.com/im_sagar_prashant/"><i class="fa-brands fa-square-instagram"></a></i></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100011540371356"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://web.whatsapp.com/9917409800"><i class="fa-brands fa-square-whatsapp"></i></a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023 Prashant Sagar | All Right Reserved </p>
+        </div>
+    </footer>
+</body>
+<script src="/script.js">
+
+     // JavaScript for form submission (you might want to add more validation)
+     document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault(); // Prevent the form from submitting
+
+      // You can add code here to handle the form submission, e.g., send the data to a server
+      alert('Form submitted!'); // For demonstration purposes, show an alert
+    });
+</script>
+</html>

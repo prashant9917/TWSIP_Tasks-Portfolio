@@ -1,0 +1,153 @@
+.mainPage {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: black;
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, black, #494848); */
+    /* background: linear-gradient(to right, black, #494848); */
+
+}
+
+.leftPage {
+    /* border: 1px solid blue; */
+    color: white;
+    text-align: center;
+    width: 50%;
+}
+
+.leftPage p {
+    margin-top: 200px;
+    font-size: 23px;
+    color: aqua;
+}
+
+.leftPage h2 {
+    font-family: cursive;
+}
+
+.leftPage #element {
+    font-size: 40px;
+    font: 700;
+    text-transform: capitalize;
+    color: aqua;
+    text-shadow: 1px 2px 3px aquamarine;
+
+}
+
+.leftPage button {
+    background-color: transparent;
+    color: white;
+    /* transition: none; */
+    border: none;
+    border: 1px solid white;
+    box-shadow: 1px 0px 2px 2px gray;
+    border-radius: 8px;
+    margin-top: 40px;
+    padding: 12px;
+    font-size: 17px;
+    margin-right: 20px;
+}
+
+.leftPage button i {
+    margin-left: 5px;
+}
+
+.leftPage button a {
+    text-decoration: none;
+    color: white;
+}
+
+.leftPage button:hover {
+    cursor: pointer;
+    /* color: chartreuse; */
+    /* background: rgb(2,0,36); */
+    background: linear-gradient(100deg, blue, gray);
+    font-weight: 600;
+}
+
+.rightPage {
+    /* border: 1px solid blue; */
+    /* background-color: black; */
+    width: 50%;
+}
+
+.rightPage .image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 50px; */
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.image img {
+
+    margin-top: 80px;
+    width: 300px;
+    /* box-shadow: 1px 1px 3px 2px gray; */
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+/* Media Queries for Tablet */
+@media (max-width: 768px) {
+    body{
+        width: 100%;
+        margin: 0;padding: 0;
+        position: sticky;
+    }
+    .mainPage {
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+    }
+
+    .leftPage,
+    .rightPage {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .leftPage p {
+        margin-top: 10px;
+    }
+
+    .leftPage button {
+        margin-bottom: 30px;
+    }
+
+
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 480px) {
+    body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    .mainPage {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .leftPage p {
+        font-size: 16px;
+        margin-top: 10px;
+
+    }
+
+    .leftPage #element {
+        font-size: 25px;
+    }
+
+    .leftPage button {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+}
